@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evolution Fitness</title>
+<link rel="manifest" href="manifest.json">
+
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #ecfeff, #f0fdf4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  animation: fadeZoom 1.2s ease-out;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #475569;
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
+
+<script>
+setTimeout(() => {
+  window.location.href = "index.html";
+}, 1500);
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">Evolution Fitness</div>
+    <div class="subtitle">Fitness & Wellness</div>
+  </div>
+</body>
+</html>

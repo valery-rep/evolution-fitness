@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evolution Fitness</title>
+<link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f6f8;
+  color: #0f172a;
+}
+
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.header p {
+  margin-top: 4px;
+  opacity: 0.6;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.card a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.card-sub {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-left: 32px;
+}
+
+.icon {
+  width: 24px;
+  font-size: 18px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+/* 🔥 BADGE SISTEMATO */
+.badge {
+  background: #16a34a;
+  color: white;
+  padding: 8px 16px;          /* più respiro */
+  border-radius: 999px;       /* pillola perfetta */
+  font-size: 12px;
+  font-weight: 700;           /* bold */
+  display: flex;              /* centratura vera */
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;          /* distanza dal testo */
+  min-width: 70px;            /* equilibrio visivo */
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="app">
+
+  <div class="header">
+    <h1>Ciao, Valeria 👋</h1>
+    <p>Evolution Fitness</p>
+  </div>
+
+  <div class="card">
+    <a href="servizi.html">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="icon">🏋️</span>
+          Servizi attivi
+        </div>
+        <div class="card-sub">Abbonamento palestra</div>
+      </div>
+      <div class="badge">ATTIVO</div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="profilo.html">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="icon">👤</span>
+          Profilo
+        </div>
+        <div class="card-sub">Dati personali</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="informazioni.html">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="icon">ℹ️</span>
+          Informazioni
+        </div>
+        <div class="card-sub">Certificato e sospensioni</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="news.html">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="icon">📰</span>
+          News
+        </div>
+        <div class="card-sub">Comunicazioni palestra</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="chisiamo.html">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="icon">🏢</span>
+          Chi siamo
+        </div>
+        <div class="card-sub">Info struttura</div>
+      </div>
+    </a>
+  </div>
+
+</div>
+</body>
+</html>
