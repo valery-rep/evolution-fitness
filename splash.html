@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Evolution Fitness</title>
-<link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <title>Evolution Fitness</title>
 
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#16a34a">
 
-<style>
-body {
-  margin: 0;
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #ecfeff, #f0fdf4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0fdf4;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-.container {
-  text-align: center;
-  animation: fadeZoom 1.2s ease-out;
-}
+    h1 {
+      margin-bottom: 30px;
+    }
 
-.logo {
-  font-size: 40px;
-  font-weight: 700;
-  color: #0f172a;
-}
-
-.subtitle {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #475569;
-}
-
-@keyframes fadeZoom {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-</style>
-
-<script>
-setTimeout(() => {
-  window.location.href = "index.html";
-}, 1500);
-</script>
+    button {
+      padding: 14px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #16a34a;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="logo">Evolution Fitness</div>
-    <div class="subtitle">Fitness & Wellness</div>
-  </div>
+
+  <h1>Evolution Fitness</h1>
+
+  <button onclick="window.location.href='index.html'">
+    Entra
+  </button>
+
 </body>
 </html>
