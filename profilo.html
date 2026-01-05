@@ -1,29 +1,98 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profilo</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,STESSA_ICONA_BASE64">
-<style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f6f8}
-.app{max-width:420px;margin:auto;padding:20px}
-.card{background:#fff;border-radius:16px;padding:18px;margin-top:20px}
-.row{display:flex;justify-content:space-between;margin-bottom:12px}
-</style>
+  <meta charset="UTF-8">
+  <title>Profilo</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#16a34a">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f3f4f6;
+    }
+
+    .header {
+      background: #16a34a;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .info-block {
+      margin-bottom: 18px;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 16px;
+      font-weight: 500;
+      color: #111827;
+    }
+
+    .back {
+      display: block;
+      margin: 24px auto 0;
+      text-align: center;
+      text-decoration: none;
+      color: #16a34a;
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
-<div class="app">
-<a href="index.html">← Home</a>
 
-<div class="card">
-<h3>Profilo</h3>
-<div class="row"><span>Nome e Cognome</span><strong> Valeria Urso</strong></div>
-<div class="row"><span>Indirizzo</span><strong> Via Nuova Scacchiere 34, Zafferana Etnea</strong></div>
-<div class="row"><span>Telefono</span><strong> 3409236598</strong></div>
-<div class="row"><span>Email</span><strong> ursovaleria93@gmail.com</strong></div>
-</div>
+  <div class="header">Profilo</div>
 
-</div>
+  <div class="container">
+    <div class="card">
+
+      <div class="info-block">
+        <div class="label">Nome e Cognome</div>
+        <div class="value">Valeria Urso</div>
+      </div>
+
+      <div class="info-block">
+        <div class="label">Indirizzo</div>
+        <div class="value">
+          Via Nuova Scacchiere 34, Zafferana Etnea (CT)
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="label">Numero di telefono</div>
+        <div class="value">3409236598</div>
+      </div>
+
+      <div class="info-block">
+        <div class="label">Email</div>
+        <div class="value">ursovaleria93@gmail.com</div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back">← Home</a>
+  </div>
+
 </body>
 </html>
